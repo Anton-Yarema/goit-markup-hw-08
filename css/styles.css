@@ -1,0 +1,46 @@
+/* Section features! */
+
+/* .icon-antenna::before {
+  background-image: url(../images/antenna\ 1.svg);
+}
+.icon-clock::before {
+  background: url(../images/clock\ 1.svg);
+}
+.icon-diagram::before {
+  background: url(../images/diagram\ 1.svg);
+}
+.icon-astronaut::before {
+  background: url(../images/astronaut\ 1.svg);
+} */
+
+/* .features-content::before {
+  content: "";
+  margin-bottom: 30px;
+  display: block;
+  width: 270px;
+  height: 120px;
+  background-color: var(--secondary-bgc-color);
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+} */
+
+/* End Section features! */
+
+/* Section Services */
+
+/* End services */
+
+/* Section Team! */
+
+/* .socials-item:hover .socials-link {
+  fill: var(--white-color);
+  background-color: var(--accent-color);
+} */
+
+/*  End section team! */
+
+/* Section Clients */
+
+/* End section clients */
