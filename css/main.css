@@ -1017,10 +1017,21 @@ a {
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 34px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   gap: 8px;
+}
+@media screen and (max-width: 767px) {
+  .btn-block {
+    width: 326px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 768px) {
+  .btn-block {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .btn-join {
