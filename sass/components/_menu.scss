@@ -109,6 +109,11 @@
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: var(--accent-color);
+
+  &:not(:last-child) {
+    border-right: 1px solid #ececec;
+    padding-right: 10px;
+  }
 }
 
 .mobile-contacts-item:first-child {

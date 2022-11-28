@@ -1509,6 +1509,10 @@ a {
   letter-spacing: 0.02em;
   color: var(--accent-color);
 }
+.mobile-socials-item:not(:last-child) {
+  border-right: 1px solid #ececec;
+  padding-right: 10px;
+}
 
 .mobile-contacts-item:first-child {
   margin-bottom: 32px;
