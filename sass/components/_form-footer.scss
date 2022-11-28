@@ -1,15 +1,35 @@
 .footer-two {
-  margin-right: 93px;
+  margin-top: 60px;
+
+  @media screen and(max-width: 767px) {
+    margin-bottom: 60px;
+  }
+  @media screen and(min-width: 1200px) {
+    margin-right: 93px;
+  }
 }
 
 .form-subscribe {
   position: relative;
 
-  display: flex;
-  align-items: baseline;
-  justify-content: center;
-  gap: 12px;
   margin-top: 20px;
+
+  @media screen and(min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 20px;
+  }
+}
+
+.subscribe-mail {
+  position: relative;
+  @media screen and (max-width: 1199px) {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
 }
 
 .subscribe-mail-item {
@@ -27,8 +47,20 @@
 
 .send-icon {
   position: absolute;
-  top: 50%;
-  right: 28px;
+  top: 80%;
+  right: 150px;
   transform: translateY(-50%);
   fill: var(--white-color);
+
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    top: 80%;
+    right: 300px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    position: absolute;
+    top: 50%;
+    right: 28px;
+  }
 }

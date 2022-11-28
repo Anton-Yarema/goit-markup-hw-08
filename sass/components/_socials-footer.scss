@@ -1,4 +1,8 @@
 .join {
+  @media screen and (max-width: 1199px) {
+    display: flex;
+    justify-content: center;
+  }
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
