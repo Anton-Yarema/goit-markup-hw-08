@@ -1,15 +1,17 @@
 .footer-two {
-  margin-top: 60px;
-
-  @media screen and(min-width: 768px) {
-    display: inline-block;
-    margin-bottom: 60px;
-  }
+   
   @media screen and(max-width: 767px) {
+    margin-top: 60px;
     margin-bottom: 60px;
   }
   @media screen and(min-width: 1200px) {
     margin-right: 93px;
+  }
+}
+
+.subscribe {
+  @media screen and(min-width: 768px) and (max-width: 1199px) {
+    margin: 0 auto;
   }
 }
 
@@ -63,7 +65,7 @@
   @media screen and (min-width: 768px) {
     position: absolute;
     top: 80%;
-    right: 300px;
+    right: 150px;
   }
 
   @media screen and (min-width: 1200px) {

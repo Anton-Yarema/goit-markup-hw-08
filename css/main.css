@@ -711,14 +711,20 @@ a {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .footer-bot {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-bot {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -728,10 +734,11 @@ a {
 .footer-one {
   text-align: center;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer-one {
-    display: inline-block;
     margin-right: 165px;
+    margin-left: 76px;
+    margin-bottom: 60px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -857,23 +864,21 @@ a {
   background-color: var(--accent-color);
 }
 
-.footer-two {
-  margin-top: 60px;
-}
-@media screen and (min-width: 768px) {
-  .footer-two {
-    display: inline-block;
-    margin-bottom: 60px;
-  }
-}
 @media screen and (max-width: 767px) {
   .footer-two {
+    margin-top: 60px;
     margin-bottom: 60px;
   }
 }
 @media screen and (min-width: 1200px) {
   .footer-two {
     margin-right: 93px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .subscribe {
+    margin: 0 auto;
   }
 }
 
@@ -942,7 +947,7 @@ a {
   .send-icon {
     position: absolute;
     top: 80%;
-    right: 300px;
+    right: 150px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1012,10 +1017,21 @@ a {
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 34px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   gap: 8px;
+}
+@media screen and (max-width: 767px) {
+  .btn-block {
+    width: 326px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 768px) {
+  .btn-block {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .btn-join {
