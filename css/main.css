@@ -72,7 +72,6 @@ p {
 
 img {
   display: block;
-  max-width: 100%;
   height: auto;
 }
 @media screen and (min-width: 768px) and (max-width: 1199.98px) {
@@ -317,6 +316,19 @@ a {
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .header-contact__icon {
+    width: 14px;
+    height: 10px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .header-contact__icon--tab {
+    width: 10px;
+    height: 14px;
+  }
 }
 
 .hero {

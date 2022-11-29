@@ -59,9 +59,21 @@
 }
 
 .header-contact__icon {
+  @media screen and (min-width: 768px) and (max-width: 1199.98px) {
+    width: 14px;
+    height: 10px;
+  }
+
   margin-right: 10px;
 
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-contact__icon--tab {
+  @media screen and (min-width: 768px) and (max-width: 1199.98px) {
+    width: 10px;
+    height: 14px;
+  }
 }
