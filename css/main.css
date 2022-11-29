@@ -91,6 +91,7 @@ a {
 .container {
   padding-left: 15px;
   padding-right: 15px;
+  min-width: 320px;
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
@@ -1139,7 +1140,7 @@ a {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   padding: 40px;
-  min-width: 450px;
+  width: 100%;
   min-height: 609px;
   background-color: var(--white-color);
   border-radius: 4px;
@@ -1149,6 +1150,11 @@ a {
   transition: -webkit-transform 250ms ease-in-out;
   transition: transform 250ms ease-in-out;
   transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
+}
+@media screen and (min-width: 767px) {
+  .modal {
+    width: 450px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .modal {
@@ -1171,11 +1177,30 @@ a {
   letter-spacing: 0.03em;
   color: var(--title-text-color);
 }
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .modal-title {
+    font-size: 12px;
+  }
+}
 
 .form {
   margin-left: auto;
   margin-right: auto;
   width: 370px;
+}
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 250px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .form {
@@ -1515,11 +1540,6 @@ a {
   margin-bottom: auto;
   list-style: none;
 }
-@media screen and (min-width: 768px) {
-  .mobile-menu {
-    display: none;
-  }
-}
 
 .mobile-menu-item:not(:last-child) {
   margin-bottom: 32px;
@@ -1562,6 +1582,11 @@ a {
   border-right: 1px solid #ececec;
   padding-right: 10px;
 }
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .mobile-socials-item {
+    font-size: 14px;
+  }
+}
 
 .mobile-contacts-item:first-child {
   margin-bottom: 32px;
@@ -1573,6 +1598,11 @@ a {
   line-height: 1.18;
   letter-spacing: 0.02em;
   color: #2196f3;
+}
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .mobile-contacts-tel {
+    font-size: 28px;
+  }
 }
 
 .mobile-contacts-mail {

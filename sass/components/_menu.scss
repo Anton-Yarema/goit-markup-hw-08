@@ -63,10 +63,6 @@
   margin-top: 48px;
   margin-bottom: auto;
   list-style: none;
-
-  @media screen and (min-width: 768px) {
-    display: none;
-  }
 }
 
 .mobile-menu-item:not(:last-child) {
@@ -114,6 +110,10 @@
     border-right: 1px solid #ececec;
     padding-right: 10px;
   }
+
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    font-size: 14px;
+  }
 }
 
 .mobile-contacts-item:first-child {
@@ -126,6 +126,10 @@
   line-height: 1.18;
   letter-spacing: 0.02em;
   color: #2196f3;
+
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    font-size: 28px;
+  }
 }
 
 .mobile-contacts-mail {
