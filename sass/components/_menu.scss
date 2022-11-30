@@ -38,7 +38,7 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  padding: 32px;
+  padding: 40px;
   background-color: var(--white-color);
   z-index: 999;
 
@@ -97,6 +97,10 @@
   display: flex;
   gap: 20px;
   margin-bottom: 48px;
+
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    justify-content: space-around;
+  }
 }
 
 .mobile-socials-item {
@@ -112,7 +116,7 @@
   }
 
   @media screen and (min-width: 320px) and (max-width: 480px) {
-    font-size: 14px;
+    font-size: 12px;
   }
 }
 
@@ -128,14 +132,17 @@
   color: #2196f3;
 
   @media screen and (min-width: 320px) and (max-width: 480px) {
-    font-size: 28px;
+    font-size: 24px;
   }
 }
 
 .mobile-contacts-mail {
   font-weight: 500;
-  font-size: 24px;
+  font-size: 28px;
   line-height: 1.17;
   letter-spacing: 0.02em;
   color: #757575;
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    font-size: 22px;
+  }
 }
