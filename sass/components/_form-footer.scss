@@ -1,5 +1,4 @@
 .footer-two {
-   
   @media screen and(max-width: 767px) {
     margin-top: 60px;
     margin-bottom: 60px;
@@ -58,9 +57,15 @@
 .send-icon {
   position: absolute;
   top: 80%;
-  right: 150px;
+  right: 28%;
   transform: translateY(-50%);
   fill: var(--white-color);
+
+  @media screen and (min-width: 480px) {
+    position: absolute;
+    top: 80%;
+    right: 150px;
+  }
 
   @media screen and (min-width: 768px) {
     position: absolute;

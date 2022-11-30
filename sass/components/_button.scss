@@ -51,7 +51,7 @@
   @extend %list;
 
   display: flex;
-  margin-bottom: 34px;  
+  margin-bottom: 34px;
   gap: 8px;
 
   @media screen and(max-width: 767px) {
@@ -64,8 +64,8 @@
   }
 }
 
- 
-.btn-join { 
+.btn-join {
+  position: relative;
   width: 200px;
   height: 50px;
   padding-left: 28px;

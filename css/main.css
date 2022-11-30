@@ -378,6 +378,7 @@ a {
 .hero__title {
   margin-left: auto;
   margin-right: auto;
+  max-width: 360px;
   margin-top: 0;
   margin-bottom: 30px;
   font-weight: 900;
@@ -972,10 +973,17 @@ a {
 .send-icon {
   position: absolute;
   top: 80%;
-  right: 150px;
+  right: 28%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   fill: var(--white-color);
+}
+@media screen and (min-width: 480px) {
+  .send-icon {
+    position: absolute;
+    top: 80%;
+    right: 150px;
+  }
 }
 @media screen and (min-width: 768px) {
   .send-icon {
@@ -1069,6 +1077,7 @@ a {
 }
 
 .btn-join {
+  position: relative;
   width: 200px;
   height: 50px;
   padding-left: 28px;
